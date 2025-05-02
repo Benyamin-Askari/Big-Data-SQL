@@ -1,60 +1,6 @@
 # Databricks notebook source
-# MAGIC %md
-# MAGIC ##Benyamin Askari
-# MAGIC ##Student ID: 00790065
 
-# COMMAND ----------
-
-# MAGIC %md
 # MAGIC # Task 1: Analysis of Clinical Trial Data Using Spark SQL
-# MAGIC
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC #  **Table of Contents**
-# MAGIC
-# MAGIC ### **1. Load Data**
-# MAGIC - 1.1 Header Inspection  
-# MAGIC - 1.2 Load the Dataset Properly with Schema
-# MAGIC
-# MAGIC ### **2. Exploratory Data Analysis (EDA)**
-# MAGIC - 2.1 Visual Inspection of DataFrame  
-# MAGIC - 2.2 Schema Inspection  
-# MAGIC - 2.3 Summary Statistics  
-# MAGIC - 2.4 Dataset Dimensions  
-# MAGIC - 2.5 Missing Values Count per Column  
-# MAGIC - 2.6 Value Counts of Key Categorical Fields  
-# MAGIC - 2.7 Date Normalization and Overwriting Original Columns  
-# MAGIC - 2.8 Identifying Rows Missing All Required Fields  
-# MAGIC
-# MAGIC ### **3. Registering Cleaned Data for SQL Queries**
-# MAGIC
-# MAGIC ---
-# MAGIC
-# MAGIC ### **4. SQL-Based Analytical Tasks**
-# MAGIC
-# MAGIC ####  **Question 1 — Most Frequent Study Types**
-# MAGIC - Step 1: Create a Filtered View of Study Types with Frequency ≥ 8  
-# MAGIC - Step 2: Total Count of Included Records
-# MAGIC - Step 3: Display the Frequency Table 
-# MAGIC
-# MAGIC ####  **Question 2 — Top 10 Most Frequent Medical Conditions**
-# MAGIC - Step 1: Split and Normalize Conditions  
-# MAGIC - Step 2: Count Total Number of Contributing Condition Records 
-# MAGIC - Step 3: Rank Top 10 Most Common Conditions 
-# MAGIC
-# MAGIC ####  **Question 3 — Mean Duration of Clinical Trials**
-# MAGIC - Step 1: Filter for Valid Dates and Calculate Duration  
-# MAGIC - Step 2: Count Contributing Records  
-# MAGIC - Step 3: Compute Mean Duration in Months  
-# MAGIC
-# MAGIC ####  **Question 4 — Completed Diabetes-Related Trials by Year**
-# MAGIC - Step 1: Filter and Extract Completion Year 
-# MAGIC - Step 2: Count Contributing Records  
-# MAGIC - Step 3: Count Per Year to Analyze Trend
-
-# COMMAND ----------
 
 # MAGIC %md
 # MAGIC ##1. Load Data
